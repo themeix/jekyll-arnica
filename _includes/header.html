@@ -1,0 +1,35 @@
+<!-- Start Header Area -->
+<header class="header-area">
+   <div class="header-nav  header-nav-white">
+      <div class="container">
+         <div class="row">
+            <div class="col-2">
+               <a class="header-logo" href="{{site.url}}"><img src="{{site.logo_url}}" alt="{{site.title}}"></a>
+            </div>
+            <div class="col-10">
+              {% include navigation.html %}
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+<div class="modal fade" id="modalsearch" tabindex="-1" role="dialog">
+   <button type="button" class="close" data-dismiss="modal">
+   <span aria-hidden="true">&times;</span>
+   </button>
+   <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+         <div class="modal-body">
+            <form class="modal-search-form" action="#">
+               <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Your Search" id="search-input" aria-label="Search" required=""><span class="input-group-btn">
+                  <button class="btn btn-primary" type="submit"><img src="{{site.baseurl}}/assets/images/search-icon.png" alt="search icon"></button>
+                  </span>
+               </div>
+            </form>
+            <ul id="results-container"></ul>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- End Header Area -->

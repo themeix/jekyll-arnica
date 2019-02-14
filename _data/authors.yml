@@ -1,0 +1,53 @@
+
+  - author:
+    name: themeix
+    email: themeix@gmail.com
+    web: https://themeix.com
+    profile_pic: /assets/images/author-1.png
+    cover_pic: /assets/images/author-h1.png
+    location: Link Road, London
+    designation: Ux/Ui Designer
+    bio: lorem Adipiscing praesent non class aspernatur nibh viverra ut ut dictum viverra
+    behance_url: https://behance.com/themeix
+    twitter_url: https://twitter.com/themeix
+    facebook_url: https://facebook.com/themeix
+    total_posts: 10
+  - author:
+    name: Blake Weaving
+    email: blakewav@gmail.com
+    web: https://themeix.com
+    profile_pic: /assets/images/author-2.png
+    cover_pic: /assets/images/author-h2.png
+    location: Melborne, German
+    designation: Web Developer
+    bio: Blake Weaving ut ut dictum viverra blakewav Adipiscing praesent non class aspernatur nibh viverra ut ut dictum viverra habib 
+    behance_url: https://behance.com/blakewav
+    twitter_url: https://twitter.com/blakewav
+    facebook_url: https://facebook.com/blakewav
+    total_posts: 24
+  - author:
+    name: Aidan James
+    email: aidanjames@gmail.com
+    web: https://aidanjames.com
+    profile_pic: /assets/images/author-3.png
+    cover_pic: /assets/images/author-h3.png
+    location: Galiean, Newzaland
+    designation: Graphic Designer
+    bio: aidanjames personal information viverra ut ut dictum viverra habib
+    behance_url: https://behance.com/aidanjames
+    twitter_url: https://twitter.com/aidanjames
+    facebook_url: https://facebook.com/aidanjames
+    total_posts: 35
+  - author:
+    name: David Ellis
+    email: davidellis@gmail.com
+    web: https://davidellis.com
+    profile_pic: /assets/images/author-4.png
+    cover_pic: /assets/images/author-h4.png
+    location: Galiean, Newzaland
+    designation: Affiliate Marketer
+    bio: davidellis uz ullah personal information viverra ut ut dictum viverra habib
+    behance_url: https://behance.com/davidellis
+    twitter_url: https://twitter.com/davidellis
+    facebook_url: https://facebook.com/davidellis
+    total_posts: 35

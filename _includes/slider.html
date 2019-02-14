@@ -9,7 +9,7 @@
       <div class="slider-box">
             <div class="slider-item">
                <a href="/tag/{{posts.tags[0]}}" class="btn-style1 ">{{posts.tags[0]}}</a>
-               <h1 class="heading-big"><a href="{{posts.url}}">{{posts.title}}</a></h1>
+               <h1 class="heading-big"><a href="{{posts.url}}">{{posts.title | truncatewords: "8"}}</a></h1>
                <ul class="slider-date list-inline">
                   <li class="list-inline-item">{{posts.date | date_to_long_string}}</li>
                </ul>

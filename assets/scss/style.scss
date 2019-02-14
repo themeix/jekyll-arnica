@@ -595,11 +595,20 @@ INDEX SASS
 .post-template .header-nav-white .collapse-btn .collapse-bar {
 	background-color: $font-color2;
 }
+.page-template .header-nav-white .collapse-btn .collapse-bar {
+	background-color: $font-color2;
+}
 .post-template .header-nav-white #header-menu > li {
+	color:$font-color2;
+}
+.page-template .header-nav-white #header-menu > li a {
 	color:$font-color2;
 }
 .home-template .header-nav-white #header-menu > li {
 	color:$font-color4;
+}
+.page-template .header-nav-white #header-menu .search-modal img {
+    filter: brightness(10) invert(1);
 }
 
 .slider-carousel {

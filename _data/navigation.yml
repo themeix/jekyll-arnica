@@ -1,11 +1,11 @@
 - title: Home
   url: /
 - title: About
-  url: /pages/about.html
+  url: /pages/about
 - title: Contact
-  url: /pages/contact.html
+  url: /pages/contact
 - title: Styles
-  url: /pages/styles.html
+  url: /pages/styles
 # - title: Support
 #   url: /support.html
 #   sublinks:

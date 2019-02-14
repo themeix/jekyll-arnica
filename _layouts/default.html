@@ -14,12 +14,13 @@
       <link rel="stylesheet" href="{{site.baseurl}}/assets/css/fontawesome.min.css"/>
       <link rel="stylesheet" href="{{site.baseurl}}/assets/css/animate.min.css"/>
       <link rel="stylesheet" href="{{site.baseurl}}/assets/css/slicknav.min.css"/>
+      <link rel="stylesheet" href="{{site.baseurl}}/assets/css/default.css"/>
       <link rel="stylesheet" href="{{site.baseurl}}/assets/css/owl.carousel.min.css"/>
       <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css"/>
       <!--  Google Font -->
       <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
    </head>
-   <body class="{% if page.layout == 'post' %} post-template {% endif %} {% if page.layout == 'default' %} home-template {% endif %} {% if page.layout == 'tag_page' %} tag-template {% endif %}">
+   <body class="{% if page.layout == 'post' %} post-template {% endif %} {% if page.url == '/index.html' %} home-template {% endif %} {% if page.layout == 'tag_page' %} tag-template {% endif %} {% if page.parmalink %} page-template {% endif %}">
 
       {% include header.html %}
          {{content}}
@@ -32,6 +33,7 @@
       <script src="{{site.baseurl}}/assets/js/skew.min.js"></script>
       <script src="{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"></script>
       <script src="{{site.baseurl}}/assets/js/jquery.slicknav.min.js"></script>
+      <script src="{{site.baseurl}}/assets/js/highlight.js"></script>
       <script src="{{site.baseurl}}/assets/js/wow.min.js"></script>
       <script src="{{site.baseurl}}/assets/js/custom.js"></script>
    </body>

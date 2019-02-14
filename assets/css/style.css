@@ -881,11 +881,20 @@ h1, h2, h3, h4, h5, h6 {
 .post-template .header-nav-white .collapse-btn .collapse-bar {
   background-color: #222222; }
 
+.page-template .header-nav-white .collapse-btn .collapse-bar {
+  background-color: #222222; }
+
 .post-template .header-nav-white #header-menu > li {
+  color: #222222; }
+
+.page-template .header-nav-white #header-menu > li a {
   color: #222222; }
 
 .home-template .header-nav-white #header-menu > li {
   color: #ffffff; }
+
+.page-template .header-nav-white #header-menu .search-modal img {
+  filter: brightness(10) invert(1); }
 
 .slider-carousel .owl-dots {
   height: 28px;

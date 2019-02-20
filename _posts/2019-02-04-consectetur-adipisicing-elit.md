@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Testing Warning Lorem ipsum dolor sit amet, consectetur"
-date: 2019-01-04 09:29:37 +0600
+title: "consectetur adipisicing elit. Deleniti error"
+date: 2019-02-04 09:29:37 +0600
 tags: education
-post_image: /assets/images/blog-img-5.jpg 
+post_image: /assets/images/blog-img-8.jpg 
 author: Aidan James
 comments: true
 ---

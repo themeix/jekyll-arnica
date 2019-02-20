@@ -3,7 +3,7 @@ layout: post
 title: "First Featured Post Title Recusandae ea magni"
 date: 2019-01-10 14:59:37 +0600
 tags: jekyll update
-post_image: /assets/images/banner-img.jpg 
+post_image: /assets/images/blog-img-6.jpg 
 featured: true
 author: Aidan James
 comments: true

@@ -1,7 +1,17 @@
 ---
 layout: default
+title: contact
 parmalink: /contact
 ---
+ <div class="header-page-title" style="background-image: url({{site.baseurl}}/assets/images/about-img.jpg);">
+  <div class="box-skew-right"></div>
+  <div class="container">
+     <div class="page-title-box">
+        <h1 class="heading-big">{{page.title}}</h1>
+        <p>Contact Us With et at mauris pede posuere gravida, urna arcu elementum nulla senectus tortor. Nullam ipsum, enim venenatis luctus, commodo pede, mo</p>
+     </div>
+  </div>
+</div>
 <!-- Start Contact  Area -->
 <div class="contact-area section-spacing mt-5">
    <div class="container">
@@ -42,33 +52,7 @@ parmalink: /contact
                </div>
            </div>
        </div>
-       <h5 class="sub-title heading-5">Send Us Message</h5>
-       <form class="form-style" action="#">
-              <div class="form-row">
-                 <div class="col-md-12">
-                    <div class="form-row">
-                       <div class="col-md-6">
-                          <div class="form-group">
-                             <input type="text" class="form-control" id="email" placeholder="Your Email">
-                          </div>
-                       </div>
-                       <div class="col-md-6">
-                          <div class="form-group">
-                             <input type="text" class="form-control" id="name" placeholder="Your Name">
-                          </div>
-                       </div>
-                       <div class="col-md-12">
-                          <div class="form-group">
-                             <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
-                          </div>
-                       </div>
-                       <div class="form-group m-0">
-                          <button type="submit" class="btn-style1  btn">Add Comment </button>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </form>
+       {% include contact_form.html %}
    </div>
 </div>
 <!-- End Contact Area -->

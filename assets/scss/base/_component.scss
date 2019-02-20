@@ -11,7 +11,7 @@
     background-color:$bg-color2;
 }
 .bg-color3{
-    @include background-opacity($bg-color2, 0.8);
+    @include background-opacity($bg-color2, 0.95); 
 }
 .vbg-color{
     background-color: $vbg-color;
@@ -146,12 +146,17 @@
     position: relative;
     padding: 10px 30px;
     font-weight: $font-weight-default;
-    border-radius: 10px;
+    color: $font-color4;
+    border-radius: $border-radius-round;
+    background-color:$button-bg;
+    border: 0;
     overflow: hidden;
-    border: 1px solid $font-color3;
+    border: 1px solid transparent;
     &:hover, &:focus, &:active {
       color: $font-color3;
-      box-shadow: $box-shadow-default;
+      background-color:$button-bg2;
+      border: 1px solid $button-bg;
+     box-shadow: $box-shadow-default;
     }
   }
   %button2{
@@ -165,10 +170,10 @@
     border-radius: $border-radius-round;
     background-color:$button-bg2;
     overflow: hidden;
-    border: 1px solid transparent;
     &:hover, &:focus, &:active {
-      background-color:$bg-color3;
-      border: 1px solid $font-color2;
+      background-color:$bg-color4;
+     color:$font-color4;
+       
     }
   }
 
@@ -177,8 +182,4 @@
 }
 .btn-style2{
     @extend %button2;
-}
-
-.author-content .btn-style2 {
-    color:$font-color2;
 }

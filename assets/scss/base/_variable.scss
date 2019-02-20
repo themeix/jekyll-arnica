@@ -5,16 +5,16 @@
 */
 
 /* Color */
-$font-color-default: #555555;
+$font-color-default: #232323; 
 $font-color2: #222222;
-$font-color3: #cf61f9;
+$font-color3: #666666;
 $font-color4: #ffffff;
 $placeholder-color:#777777;
 $bg-color-default:#ffffff;
-$bg-color2:#161a21;
+$bg-color2:#14161b;
 $bg-color3:#f7f6f8;
 $bg-color4:#323334;
-$button-bg : #cf61f9;
+$button-bg : #666666;
 $button-bg2 : #ffffff;
 /* Typography */
 $Poppins: 'Poppins', sans-serif;
@@ -35,7 +35,7 @@ $font-size-h6:      ceil(($font-size-default * 1.00)) ;
 /* Border */
 $border-color3:  #cacaca;
 $border-color2:  #ffffff;
-$border-color:  #cf61f9;
+$border-color:  #666666;
 $border-solid: 1px solid ;
 $border-radius:    4px ;
 $border-radius-round:    50px ;
@@ -51,7 +51,7 @@ $box-shadow-default: 0 0 40px 5px rgba(0, 0, 0, 0.02);
 $box-shadow-hover: 0 0 65px 5px rgba(0, 0, 0, 0.04);
 /* Variation Bg Color */
 
-$vbg-color: #43F8E3;
+$vbg-color: #f7f6f8;
 $vbg-color2: #FF6BD6;
 $vbg-color3: #6B76FF;
 $vbg-color4: #C6E377;

@@ -3,7 +3,7 @@ layout: post
 title: "Lorem ipsum Warning dolo Warning And Testing Web Apps"
 date: 2019-01-03 05:49:37 +0600
 tags: warning
-post_image: https://static.ghost.org/v2.0.0/images/admin-settings.jpg
+post_image: /assets/images/blog-img-3.jpg 
 author: themeix
 comments: true
 ---

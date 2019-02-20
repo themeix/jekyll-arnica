@@ -8,6 +8,7 @@
             $(".header-nav").removeClass("fixed-nav");
         }
     });
+	 
     // Preloader
     if ($('.pre-lds').length > 0) {
         $(window).on('load', function() {
@@ -57,9 +58,13 @@
           }
         ]
       });
-
+ 
     // Responsive Menu
-    $('#header-menu').slicknav();
+    $('#header-menu').slicknav({
+    closedSymbol: '+',
+    openedSymbol:'-',
+	label:''
+});
     // Slider Carousel
     if ($('.slider-carousel').length > 0) {
         $('.slider-carousel').owlCarousel({
@@ -67,7 +72,11 @@
             items:1,
             nav: false,
             dots: false,
+            mouseDrag: false,
+            touchDrag: false,
+            freeDrag: false,
             autoplay:true,
+		
         })
     }
     if ($('.author-carousel').length > 0) {
@@ -110,11 +119,7 @@
             scrollTop: 0,
         }, scroll_top_duration);
     });
-
-        var sjs = SimpleJekyllSearch({
-          searchInput: document.getElementById('search-input'),
-          resultsContainer: document.getElementById('results-container'),
-          json: '/search.json'
-        });
-
+	
+ 
+	
 })(jQuery);

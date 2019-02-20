@@ -4,7 +4,7 @@
 <div class="blog-style" style="background-image: url({{posts.post_image}})">
    <div class="{% if item == 0 %} box-skew-left {% else %} box-skew-right {% endif %}"></div>
    <div class="container">
-      <div class="blog-content wow slideInLeft {% if item != 0 %} blog-right {% endif %}" data-wow-duration="1s">
+      <div class="blog-content wow slideInLeft {% if item != 0 %} blog-right {% endif %}" data-wow-duration=".4s">
          <ul class="blog-date list-inline">
             <li class="list-inline-item">{{posts.date | date_to_long_string }}</li>
          </ul>

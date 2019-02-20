@@ -5,7 +5,8 @@
 	<div class="container">
 		<div class="page-title-box">
 			<div class="author-slider-item"  alt='{{author.name}}'/>
-				<h1 class="heading-big"><a href="/authors/{{author.name | downcase | replace:' ','_'}}">{{author.name}}</a> </h1>
+				<h1 class="heading-big"><a href="/authors/{{author.name | downcase | replace:' ','_'}}">Author - {{author.name}}</a></h1>
+				<p>{{author.bio}}</p>
 				<ul class="author-social list-inline">
 				  {% if author.facebook_url %}
 				   <li class="list-inline-item"><a href="{{author.facebook_url}}"><i class="fab fa-facebook"></i></a></li>
@@ -16,8 +17,7 @@
 				  {% if author.behance_url %}
 				   <li class="list-inline-item"><a href="{{author.behance_url}}"><i class="fab fa-behance"></i></a></li>
 				  {% endif %}
-				</ul>
-					<p>{{author.bio}}</p>
+				 </ul>
 				</div>
 		</div>
 	</div>
@@ -37,7 +37,6 @@
             <li class="list-inline-item">{{posts.date | date_to_long_string }}</li>
          </ul>
          <h2 class="heading-2"><a href="{{posts.url}}">{{posts.title}}</a></h2>
-         <p>{{posts.content | strip_html | truncatewords: "30" }}</p>
          <a href="{{posts.url}}" class="blog-read-more">Read More <i class="fas fa-angle-right"></i></a>
       </div>
    </div>

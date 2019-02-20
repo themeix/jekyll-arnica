@@ -3,7 +3,7 @@ layout: post
 title: "Second Featured Post Title Harum omnis officia vero, nesciunt"
 date: 2019-01-10 14:59:37 +0600
 tags: featured
-post_image: /assets/images/blog-img.jpg 
+post_image: /assets/images/blog-img-7.jpg 
 featured: true
 author: themeix
 comments: true

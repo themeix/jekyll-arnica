@@ -13,14 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Arnica Is a Responsive Premium Jekyll Theme
+email: themeix@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Arnica Responsive Static Jekyll Theme For Blogging.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://arnica.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -110,4 +108,11 @@ tag_page_dir: tag
 
 # site config
 
-logo_url: /assets/images/logo.png
+logo_url: /assets/images/header-logo.png
+copyright_text: '@ Copyright - 2019 arnica - Designed by <a href="https://themeix.com">Themeix</a>'
+mailclimp_url: 'https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=4784863884'
+dribble_url: https://dribble.com/themeix
+facebook_url: https://facebook.com/themeix
+instagram_url: https://instagram.com/themeix
+twitter_url: https://twitter.com/themeix
+pinterest_url: https://pinterest.com/themeix

@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll! Lorem ipsum dolor sit amet, consectetur adipisicing"
 date: 2019-02-12 14:59:37 +0600
 tags: jekyll update
-post_image: https://images.unsplash.com/photo-1485628926614-dbb863e7e1fa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080
+post_image: /assets/images/blog-img-9.jpg 
 author: themeix
 comments: true
 ---

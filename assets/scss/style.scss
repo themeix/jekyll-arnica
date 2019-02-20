@@ -3,9 +3,9 @@ Template Name: Arnica
 Template URI: https://themeix.com
 Author Name: themeix
 Author uri:  https://themeix.com
-Tag: docs, documentation, knowledgebase, qa
+Tag: blog, travel, personal, creative, skew, modern
 Verson: 1.0
-Description: Arnica is responsive docs template for the digital products authors
+Description: Arnica is responsive blog template for the bloggers and creative persons
 ===========================
 INDEX SASS
 ===========================
@@ -22,7 +22,6 @@ INDEX SASS
 11.0 Contact Area
 12.0 Footer Area
 13.0  Home Dark
-
 
 --------------------------*/
 
@@ -173,7 +172,7 @@ INDEX SASS
     right: 0;
     top: 0;
 	z-index: 100;
-	background-color: $bg-color2;
+	background-color:  #fff; 
     height: 50px;
   }
   @include tablet{
@@ -182,7 +181,7 @@ INDEX SASS
     right: 0;
     top: 0;
 	z-index: 100;
-	background-color: $bg-color2;
+	background-color: #fff;
     height: 50px;
   }
 }
@@ -202,7 +201,9 @@ INDEX SASS
 		top: 0;
 		left: 15px;
 		z-index: 1000;
-	}
+	}img {
+	max-height:40px;
+}
 }
 
 #header-menu {
@@ -301,9 +302,14 @@ INDEX SASS
 
 #header-menu.active {
 	visibility: visible;
+	margin-right: 110px;
 	opacity: 1;
 }
-
+.slicknav_menu .slicknav_icon-bar {
+    -webkit-box-shadow: 0 1px 0 rgb(0, 0, 0);
+    -moz-box-shadow: 0 1px 0rgb(0, 0, 0);
+    box-shadow: 0 1px 0 rgb(0, 0, 0);
+}
 .collapse-btn {
 	width: 45px;
 	height: 45px;
@@ -371,7 +377,7 @@ INDEX SASS
 	}
 	&:hover {
 		.collapse-bar {
-			background-color: $font-color3;
+			background-color: $font-color-default;
 		}
 	}
 	@include desktop {
@@ -398,7 +404,7 @@ INDEX SASS
 	min-height: 100%;
 	width: 100%;
 	background-color: $bg-color3;
-	bottom: -65.5%;
+	bottom: -64.5%;
 	position: absolute;
 	top: auto;
 	left: 0;
@@ -412,16 +418,9 @@ INDEX SASS
 	}
 }
 .header-area .box-skew-right {
-	bottom: -65.5%;
-}
-.blog-area .blog-style:first-child .box-skew-left,
-.blog-area .blog-style:first-child .box-skew-right,{
-	bottom: -66.5%;
-}
-.header-banner .box-skew-left,
-.header-banner .box-skew-right {
-	bottom: -66.2%;
-}
+	bottom: -64.8%;  
+} 
+
 .slider-box {
 	background: $bg-color-default;
 	margin-top: 400px;
@@ -443,10 +442,10 @@ INDEX SASS
 	}
 }
 
-.slider-item {
+.slider-item { 
 	margin-top: 15px;
 	h1 {
-		margin: 35px 0 35px 0;
+		margin: 15px 0 15px 0;
 	}
 	.slider-date {
 		font-weight: $font-weight-medi;
@@ -592,163 +591,141 @@ INDEX SASS
 	}
 }
 
-.post-template .header-nav-white .collapse-btn .collapse-bar {
-	background-color: $font-color2;
+.slider-carousel { 
+     .owl-dots {
+         height: 28px;
+         margin: 0;
+         .owl-dot {
+             height: 20px;
+             width: 5px;
+             background-color: $bg-color3;
+             border-radius: $border-radius-round;
+             margin: 0 5px;
+             vertical-align: middle;
+             @include transition(2s cubic-bezier(0.075, 0.82, 0.165, 1));
+        }
+         .active {
+             height: 28px;
+             background-color: $bg-color2 
+        }
+    }
 }
-.page-template .header-nav-white .collapse-btn .collapse-bar {
-	background-color: $font-color2;
+ .modal-content {
+     box-shadow: none;
+     border-radius: $border-radius-round;
 }
-.post-template .header-nav-white #header-menu > li {
-	color:$font-color2;
+ #modalsearch .close {
+     background-color: transparent;
+     font-size: 50px;
+     margin-right: 15px;
+     margin-top: 20px;
+     color: $font-color2;
+     border-radius: 40px;
+     padding: 5px 12px;
+     font-weight: 300;
 }
-.page-template .header-nav-white #header-menu > li a {
-	color:$font-color2;
+ .modal-dialog {
+     max-width: 500px;
+     margin: 7.75rem auto;
 }
-.home-template .header-nav-white #header-menu > li {
-	color:$font-color4;
+ .modal-backdrop {
+     background-color: $bg-color-default;
+     opacity: 1!important;
 }
-.page-template .header-nav-white #header-menu .search-modal img {
-    filter: brightness(10) invert(1);
+ .slicknav_menu {
+     position: fixed;
+     left: 0;
+     top: 5px;
+     right: 0;
+     z-index: 1000;
+     background-color: transparent;
+     .slicknav_btn {
+         background-color: transparent;
+    }
 }
+ .slicknav_nav {
+     margin: 0;
+     padding: 12px;
+     list-style: none;
+     overflow: hidden;
+     background-color: $bg-color-default;
+}
+ .header-nav-white{
+     #header-menu{
+         > li{
+             color: $font-color4;
+             > a{
+                 color: $font-color4;
+                 &:hover{
+                     color: $font-color-default;
+                }
+            }
+        }
+         .search-modal img{
+             filter: brightness(0) invert(1);
+        }
+    }
+    .header-logo img {
+         filter: brightness(0) invert(1);
+         max-height:40px;
+         @include desktop{
+             filter:inherit;
+        }
+         @include tablet{
+             filter:inherit;
+        }
+         @include mobile{
+             filter:inherit;
+        }
+    }
+     .collapse-btn .collapse-bar {
+         background-color: $bg-color-default;
+    }
+}
+ .fixed-nav {
+     position: fixed;
+     left: 0;
+     right: 0;
+     z-index: 100;
+     top: 0;
+     padding: 10px 0px;
+     background: $bg-color-default;
+     box-shadow: $box-shadow-hover;
+     @include desktop{
+         background:#fff;
+    }
+     @include tablet{
+         background:#fff;
+    }
+     #header-menu>li ul {
+         top: 115%;
+    }
+     #header-menu{
+         > li{
+             color: $font-color-default;
+             > a{
+                 color: $font-color-default;
+                 &:hover{
+                     color: $font-color-default;
+                }
+            }
+        }
+         .search-modal img{
+              filter: inherit;
+             
+        }
+    }
+     .header-logo img {
+         filter: inherit;
+         max-height:25px;
+    }
+     .collapse-btn .collapse-bar {
+         background-color: $bg-color2;
+    }
+}
+ 
 
-.slider-carousel {
-	.owl-dots {
-		height: 28px;
-		margin: 0;
-		.owl-dot {
-			height: 20px;
-			width: 5px;
-			background-color: $bg-color3;
-			border-radius: $border-radius-round;
-			margin: 0 5px;
-			vertical-align: middle;
-			@include transition(2s cubic-bezier(0.075, 0.82, 0.165, 1));
-		}
-		.active {
-			height: 28px;
-			background-color: $bg-color2
-		}
-	}
-}
-.modal-content {
-	box-shadow: none;
-	border-radius: $border-radius-round;
-}
 
-#modalsearch .close {
-    background-color: transparent;
-    font-size: 50px;
-    margin-right: 15px;
-    margin-top: 20px;
-    color: $font-color2;
-    border-radius: 40px;
-    padding: 5px 12px;
-    font-weight: 300;
-}
-
-.modal-dialog {
-	margin: 7.75rem auto;
-}
-
-.modal-backdrop {
-	background-color: $bg-color-default;
-	opacity: 1!important;
-}
-
-.slicknav_menu {
-	position: fixed;
-	left: 0;
-	top: 5px;
-	right: 0;
-	z-index: 1000;
-	background-color: transparent;
-	.slicknav_btn {
-		background-color: transparent;
-	}
-}
-.slicknav_nav {
-    margin: 0;
-    padding: 12px;
-    list-style: none;
-    overflow: hidden; 
-  background-color: $bg-color-default;
-}
-.header-nav-white{
-    #header-menu{ 
-		 > li{
-			 
-			 > a{
-				 color: $font-color4;
-				 &:hover{
-					 color: $font-color3;
-				 }
-			 }
-		 }
-		 .search-modal img{
-			filter: brightness(0) invert(1);
-		}
-		
-	}
-	.collapse-btn .collapse-bar {
-		background-color: $bg-color-default;
-	 } 
-}
-.post-template .header-nav-white{
-    #header-menu{ 
-		 > li{
-			 > a{
-				 color: $font-color2;
-				 &:hover{
-					 color: $font-color3;
-				 }
-			 }
-		 }
-		 .search-modal img{
-			filter: brightness(10) invert(1);
-		}
-		
-	}
-	.collapse-btn .collapse-bar {
-		background-color: $font-color2;
-	 } 
-}
-.fixed-nav {
-	position: fixed;
-	left: 0;
-	right: 0;
-	z-index: 100;
-	top: 0;
-	padding: 10px 0px;
-	background: $bg-color-default;
-	box-shadow: $box-shadow-hover;
-	@include desktop{
-		background:$bg-color2;
-	}
-	@include tablet{
-		background:$bg-color2;
-	}
-	#header-menu>li ul {
-		top: 115%;
-	}
-	#header-menu{ 
-		> li{
-			color: $font-color-default;
-			> a{
-				color: $font-color-default;
-				&:hover{
-					color: $font-color-default;
-				}
-			}
-		}
-		.search-modal img{
-		   filter: brightness(10) invert(1);
-	   }
-	   
-   }
-   .collapse-btn .collapse-bar {
-	   background-color: $bg-color2;
-	} 
-}
 
 /**
 * ============================
@@ -831,6 +808,8 @@ INDEX SASS
 .author-style {
 	width: 100%;
 	margin-bottom: $inn-default;
+	    background-size: cover;
+    background-position: center center;
 	.author-shap {
 		width: 200px;
 		height: 100%;
@@ -857,14 +836,14 @@ INDEX SASS
 			h3,
 			h4 {
 				a {
-					color: $font-color2;
+					 
 					&:hover {
-						color: $font-color3;
+					 
 					}
 				}
 			}
 			p {
-				color: $font-color2;
+				 
 			}
 			@include tablet {
 				padding-right: 0;
@@ -883,16 +862,7 @@ INDEX SASS
 	}
 }
 
-.author-inverse {
-	.author-shap {
-		right: -100px;
-		left: auto;
-	}
-	.author-title{
-		padding-right: 0 !important;
-	}
-} 
-
+ 
 
 /**
 * ============================
@@ -1020,27 +990,6 @@ INDEX SASS
 		color: $font-color3;
 		background: transparent;
 	}
-
-}
-.page-pagination a{
-   	
-   	   color:$font-color4;
-   &:hover {
-   	color:$font-color3;
-   }
-}
-.page-number{
-	p{
-		margin-bottom:0;
-	    color:$font-color4;
-	}
-
-}
-
-.page-item {
-	i {
-		color:$font-color4;
-	}
 }
 
 .single-comment {
@@ -1086,7 +1035,6 @@ INDEX SASS
 	li {
 		a {
 			padding: 5px 15px;
-			margin:5px 0;
 			border-radius: $border-radius-round;
 			color: $font-color4;
 			display: block;
@@ -1096,7 +1044,7 @@ INDEX SASS
 
 .single-social {
 	text-align: center;
-	padding-bottom: 48px;
+	margin:0;
 	li {
 		margin: 0 20px;
 		position: relative;
@@ -1294,6 +1242,17 @@ INDEX SASS
 	list-style: none;
 	li {
 		position: relative;
+		padding-left: 20px;
+		&:before {
+			content: "\f00c";
+			font-family: "FontAwesome";
+			color: $font-color-default;
+			position: relative;
+			position: absolute;
+			left: 0;
+			margin-top: 1px;
+			font-size: 12px;
+		}
 	}
 }
 
@@ -1314,12 +1273,13 @@ INDEX SASS
 		a {
 			background-color: transparent;
 			font-size: 20px;
-			@include color($font-color4, 0.8);
+			font-weight: 600;
+			@include color($font-color4, 0.5);
 			border: 0;
 			padding: 5px 15px;
 			&.active,
 			&:hover {
-				@include color($font-color4, 0.8);
+				@include color($font-color4, 0.9); 
 			}
 			&:first-child,
 			&:last-child {
@@ -1424,6 +1384,20 @@ INDEX SASS
 	}
 }
 
+#zsfeedbkrpanel {
+	max-width:100% !important;
+	width:100% !important;
+  }
+
+.contact-area #zsfeedbackFrame {
+	width:100% !important;
+}
+
+.contact-area iframe {
+  	display: inline-block;
+  	width: 100% !important;
+  }
+
 
 /**
 * ============================
@@ -1432,13 +1406,11 @@ INDEX SASS
 */
 
 .footer-search-form {
-	display: flex;
-	justify-content: space-between;
 	border-radius: $border-radius-round;
 	border:$border-solid $border-color3; 
 	padding: 10px 15px;
 	margin-bottom: 70px;
-	input[type="text"] {
+	input[type="email"] {
 		@include color($font-color4, 0.8);
 		border-radius: 0;
 		border: 0;
@@ -1449,6 +1421,7 @@ INDEX SASS
 		border-radius: 0;
 		border: 0;
 		background-color: transparent;
+		padding: 12px 15px;
 		color: $font-color4;
 		&:hover,
 		&:focus,
@@ -1460,37 +1433,14 @@ INDEX SASS
 	@include tablet {
 		margin-bottom: 30px;
 	}
-	span.input-group-btn {
-		display:inherit;
-	}
-	
 }
-.footer-search-form .form-group {
-		margin-bottom:0;
-	}
 
 .footer-search-form {
 	@include placeholder {
 		color: $font-color4;
 	}
-	.subscribe_input {
-		width:40vw ;
-		background-color:$bg-color2;
-		border:0;
-		color:$font-color4;
-		padding:12px;
-      &:focus {
-		border:0;
-		outline:0
-	   }
-	}
+}
 
-}
-.fixed-nav {
-	.header-nav-white #header-menu .search-modal img {
-    filter: brightness(10) invert(1);
-}
-}
 .footer-social {
 	margin-bottom: 40px;
 	li {
@@ -1512,7 +1462,10 @@ INDEX SASS
 			}
 		}
 		a {
-			@include color($font-color4, 0.8)
+			@include color($font-color4, 0.8);
+			&:hover {
+		@include color($font-color4, 0.5) 
+	}
 			i {
 				margin-right: 5px;
 			}
@@ -1522,10 +1475,13 @@ INDEX SASS
 
 .copyright-text {
 	margin: 0;
-	@include color($font-color4, 0.8)
+	@include color($font-color4, 0.5)
 	padding-bottom: 40px;
 	a {
-		@include color($font-color4, 0.8)
+		@include color($font-color4, 0.9);
+		&:hover {
+		@include color($font-color4, 0.5) 
+	}
 	}
 }
 
@@ -1605,8 +1561,8 @@ INDEX SASS
 			background: $bg-color4;
 		}
 		.search-modal img{
-			filter: brightness(0) invert(1);
-		}
+			/* filter: brightness(0) invert(1); */ 
+		} 
 	}
 	.fixed-nav,.header-nav{  
 		
@@ -1637,117 +1593,9 @@ INDEX SASS
 		color: $font-color4;
 	}
 }
-.post-template .header-nav {
- top:30px;	
-}
-.post-template .fixed-nav {
- top:0;
-}
 
-.kg-width-wide img {
-  max-width:85vw;
-}
-
-.kg-width-full img {
-  max-width:100vw;
-}
-
-.kg-gallery-container {
-    display: flex;
-    flex-direction: column;
-    margin: 1.5em auto;
-    max-width: 100%;
-    width: 100vw;
-}
-
-.kg-gallery-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
- .kg-gallery-image img {
-    display: block;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
- .kg-gallery-row:not(:first-of-type) {
-    margin: 0.75em 0 0 0;
-}
- .kg-gallery-image:not(:first-of-type) {
-    margin: 0 0 0 0.75em;
-}
-/* for eacrch result */
-
-#search-results {
-	li {
-		list-style:none;
-		border-top:1px solid $border-color3;
-		padding:10px;
-		border-top-right-radius:60px;
-		border-top-left-radius:60px;
+.page-item {
+	i{
+		@include color($font-color4, 0.5);
 	}
-	a {
-		display:inline-block;
-		padding:20px;
-		font-size:25px;
-		text-transform: capitalize;
-		color: $font-color2;
-		img {
-	    display: block;
-	    padding: 20px 20px 20px 0;
-	    max-height: 300px;
-	    width: 100%;
-	    object-fit: cover;
-		}
-	}
-}
-/*
---------------------
-Search Page
---------------------
-*/
-#results-container {
-	margin:0;
-	padding:0;
-	li {
-		display: inline-block;
-		list-style: none;
-		padding:5px;
-	}
-	a {
-		font-size: 20px;
-	}
-}
-/*
--------------------
- 404-wrapper 
--------------------
-*/
-
- .btn-error{
-     text-transform: uppercase;
-     font-size: 14px;
-     line-height: 22px;
-     transition: all .1s linear;
-     display: inline-block;
-     &:hover{
-         background:#928465;
-    }
-}
- .error-wrapper{
-     .btn-error a{
-         padding: 8px 16px;
-         text-transform: uppercase;
-         font-size: 14px;
-         line-height: 22px;
-         border: 1px solid #333333;
-         transition: all .1s linear;
-         display: inline-block;
-         &:hover{
-             background:$font-color3;
-             border:1px solid $font-color3;
-             color:$font-color4;
-        }
-    }
 }

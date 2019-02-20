@@ -6,13 +6,12 @@
   url: /pages/contact
 - title: Styles
   url: /pages/styles
-# - title: Support
-#   url: /support.html
-#   sublinks:
-#     - title: FAQ
-#       url: /faq.html
-#     - title: Documentation
-#       url: /documentation.html
-#     - title: separator
-#     - title: Customer Support
-#       url: /customer-support.html
+- title: Pages
+  url: /#
+  sublinks:
+    - title: Contact
+      url: /pages/contact
+    - title: About
+      url: /pages/about
+    - title: 404
+      url: /pages/404

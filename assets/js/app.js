@@ -1,5 +1,14 @@
 (function($) {
     "use strict";
+	
+			  // search 
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+	searchResultTemplate: '<li class="jekyll-search-item"><a href="{url}"><img class="search-post-img" src="{post_image}" alt="{title}" /> <div class="jekyll-search-contents">  <h2 class="search-post-title">{title}</h2> <p class="search-post-desc">{tags}</p>  </div></a></li>	'
+});
+
     // Fixed Header
     $(window).scroll(function() {
         if ($(this).scrollTop() > 90) {
@@ -80,13 +89,7 @@
         }, scroll_top_duration);
     });
 	
-	
-		  // search 
-  var sjs = SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '/search.json'
-});
+
 	
 			/*
 		Preeloader
@@ -96,6 +99,7 @@
 			$('#preloader-status').delay(200).fadeOut('slow');
 			$('body').delay(200).css({'overflow-x':'hidden'});
 		});
- 
+ 	
+
 	
 })(jQuery);

@@ -1,36 +1,53 @@
 <!DOCTYPE HTML>
 <html lang="zxx">
-<head>
-    <!-- meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='description' content='Arnica Responsive Static Jekyll Theme For Blogging.'>
-    <meta name="keywords" content="">
-    <!-- Facebook Open Graph -->	
-    <meta content="Arnica - Premium Jekyll Theme" property="og:site_name">
-    <meta property="og:locale" content="en_US" />
-    <meta content=" posts" property="og:title">
-    <meta content="article" property="og:type">
-    <meta content="Arnica Responsive Static Jekyll Theme For Blogging." property="og:description">
-    <meta content="http://localhost:4000/posts/index.html" property="og:url">	
-    <meta content="/assets/images/blog-img-13.jpg" property="og:image">
-    
-    
-    	
-    <!-- Twitter cards -->
-    <meta name="twitter:site"    content="@jekyllrb">
-    <meta name="twitter:creator" content="@">
-    <meta name="twitter:title"   content=" posts">	
-    <meta name="twitter:description" content="Arnica Responsive Static Jekyll Theme For Blogging.">
-    <meta name="twitter:card"  content="summary"><meta name="twitter:image" content="/assets/images/blog-img-13.jpg">
-    <!-- Site Title -->
-    <title>  posts </title>
-   <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon"/>
-   <!-- gulp:css -->
-   <link rel="stylesheet" href="/assets/css/app.min.css">
-   <!-- endgulp -->
-   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+   <head>
+      <!-- meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name='description' content='Arnica Responsive Static Jekyll Theme For Blogging.'>
+      <meta name="keywords" content="">
+      <!-- Facebook Open Graph -->	
+      <meta content="Arnica - Premium Jekyll Theme" property="og:site_name">
+      <meta property="og:locale" content="en_US" />
+      
+      <meta content=" posts" property="og:title">
+      
+      
+      <meta content="article" property="og:type">
+      
+      
+      <meta content="Arnica Responsive Static Jekyll Theme For Blogging." property="og:description">
+      
+      
+      <meta content="http://localhost:4000/posts/index.html" property="og:url">
+      	
+      
+      <meta content="/assets/images/blog-img-13.jpg" property="og:image">
+      
+      
+      
+      	
+      <!-- Twitter cards -->
+      <meta name="twitter:site"    content="@jekyllrb">
+      <meta name="twitter:creator" content="@">
+      
+      <meta name="twitter:title"   content=" posts">
+      	
+      
+      <meta name="twitter:description" content="Arnica Responsive Static Jekyll Theme For Blogging.">
+      
+      
+      <meta name="twitter:card"  content="summary">
+      <meta name="twitter:image" content="/assets/images/blog-img-13.jpg">
+      
+      <!-- Site Title -->
+      <title>  posts </title>
+      <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon"/>
+      <!-- gulp:css -->
+      <link rel="stylesheet" href="/assets/css/app.min.css">
+      <!-- endgulp -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
    </head>
    <body class="   ">
       <!-- Preloader Start -->
@@ -40,20 +57,16 @@
       <!-- Preloader End -->   
       <!-- Start Header Area -->
 <header class="header-area">
- 
- 
-  <div class="header-nav   header-nav-white  ">
-  
- 
    
-   
+   <div class="header-nav   header-nav-white  ">
+       
       <div class="container">
          <div class="row">
             <div class="col-2">
                <a class="header-logo" href="http://localhost:4000"><img src="/assets/images/header-logo.png" alt="Arnica - Premium Jekyll Theme"></a>
             </div>
             <div class="col-10">
-               <ul id="header-menu">
+                <ul id="header-menu">
    
      
        <li class=""><a href="/">Home</a></li>
@@ -110,9 +123,29 @@
          </div>
       </div>
    </div>
+   <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title" id="myModalLabel">Search from site</h4>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <!-- Actual search box -->
+               <div class="form-group has-search">
+                  <span class="fa fa-search form-control-feedback"></span>
+                  <input id="search-input" type="text" class="form-control" placeholder="Search">
+               </div>
+               <ul id="results-container"></ul>
+            </div>
+         </div>
+      </div>
+   </div>
 </header>
- 
 <!-- End Header Area -->
+
       
 <div class="d-flex align-items-center header-page-title" style="background-image: url(/assets/images/blog-img-13.jpg);">
    <div class="container">
@@ -326,31 +359,5 @@
       <!-- gulp:js -->
       <script src="/assets/js/build.min.js"></script>
       <!-- endgulp -->
-	  
-	  
-<!-- large modal -->
-<div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Search from site</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-         <!-- Actual search box -->
-  <div class="form-group has-search">
-    <span class="fa fa-search form-control-feedback"></span>
-    <input id="search-input" type="text" class="form-control" placeholder="Search">
-  </div>
-  
-  <ul id="results-container"></ul>
-  
-      </div>
-  
-    </div>
-  </div>
-</div>	  
    </body>
 </html>

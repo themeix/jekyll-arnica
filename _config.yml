@@ -21,8 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arnica.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-dark_header:  true
-
+dark_header:  false
+cover_image: /assets/images/blog-img-13.jpg
 
 
 # Build settings

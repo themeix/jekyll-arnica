@@ -540,6 +540,20 @@ h1, h2, h3, h4, h5, h6 {
   .search-modal {
     display: none !important; } }
 
+.has-search .form-control {
+  padding-left: 2.375rem; }
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa; }
+
 #header-menu.active {
   visibility: visible;
   margin-right: 110px;
@@ -724,6 +738,13 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 170px;
       margin-bottom: 90px;
       padding: 40px 30px; } }
+
+.page-title-meta li:after {
+  content: "/";
+  padding-left: 10px; }
+
+.page-title-meta li:last-child:after {
+  display: none; }
 
 .slider-carousel .owl-dots {
   height: 28px;

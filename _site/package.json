@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"description": "Write the theme description",
 	"scripts": {
-		"postinstall": "bower install",
 		"dev": "gulp production",
 		"zip": "gulp zip"
 	},

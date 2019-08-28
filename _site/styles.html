@@ -1,12 +1,31 @@
 <!DOCTYPE HTML>
-<html lang="eng">
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="robots" content="noindex, nofollow">
-   <meta name='description' content='Arnica Responsive Static Jekyll Theme For Blogging.'>
-   <meta name="keywords" content="">
-   <title> Style Guide </title>
+<html lang="zxx">
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='Arnica Responsive Static Jekyll Theme For Blogging.'>
+    <meta name="keywords" content="">
+    <!-- Facebook Open Graph -->	
+    <meta content="Arnica - Premium Jekyll Theme" property="og:site_name">
+    <meta property="og:locale" content="en_US" />
+    <meta content="Style Guide" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="Arnica Responsive Static Jekyll Theme For Blogging." property="og:description">
+    <meta content="http://localhost:4000/styles.html" property="og:url">	
+    <meta content="/assets/images/blog-img-13.jpg" property="og:image">
+    
+    
+    	
+    <!-- Twitter cards -->
+    <meta name="twitter:site"    content="@jekyllrb">
+    <meta name="twitter:creator" content="@">
+    <meta name="twitter:title"   content="Style Guide">	
+    <meta name="twitter:description" content="Arnica Responsive Static Jekyll Theme For Blogging.">
+    <meta name="twitter:card"  content="summary"><meta name="twitter:image" content="/assets/images/blog-img-13.jpg">
+    <!-- Site Title -->
+    <title> Style Guide </title>
    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon"/>
    <!-- gulp:css -->
    <link rel="stylesheet" href="/assets/css/app.min.css">
@@ -21,7 +40,13 @@
       <!-- Preloader End -->   
       <!-- Start Header Area -->
 <header class="header-area">
-   <div class="header-nav  header-nav-dark     header-nav-white">
+ 
+ 
+ <div class="header-nav   header-nav-white  ">
+ 
+  
+   
+   
       <div class="container">
          <div class="row">
             <div class="col-2">
@@ -80,26 +105,7 @@
 <span class="collapse-bar"></span>
 </button>
 
-<!-- large modal -->
-<div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h3>Modal Body</h3>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+
             </div>
          </div>
       </div>
@@ -110,10 +116,12 @@
       
 
 
-<div class="d-flex align-items-center header-page-title" style="background-image: url(/assets/images/blog-img-13.jpg);">
+<div class="d-flex align-items-center header-page-title" style="background-image: url(
+ /assets/images/blog-img-13.jpg 
+);">
    <div class="container">
       <div class="page-title-box">
-         <h1 class="heading-big  text-white">Style Guide</h1>
+         <h1 class="heading-big  text-white ">Style Guide</h1>
       </div>
    </div>
 </div>
@@ -259,5 +267,31 @@
       <!-- gulp:js -->
       <script src="/assets/js/build.min.js"></script>
       <!-- endgulp -->
+	  
+	  
+<!-- large modal -->
+<div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Search from site</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <!-- Actual search box -->
+  <div class="form-group has-search">
+    <span class="fa fa-search form-control-feedback"></span>
+    <input id="search-input" type="text" class="form-control" placeholder="Search">
+  </div>
+  
+  <ul id="results-container"></ul>
+  
+      </div>
+  
+    </div>
+  </div>
+</div>	  
    </body>
 </html>

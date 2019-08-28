@@ -52,13 +52,9 @@
             dotsData: true
             });
     }
-    if ($('.pre').length > 0) {
-    $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-      });
-    }
-    if ($('.video-container').length > 0) {
-        $(".video-container").fitVids();
+ 
+    if ($('.entry-content').length > 0) {
+        $(".entry-content").fitVids();
     }
     // Wow Animation
      var wow = new WOW(
@@ -83,6 +79,15 @@
             scrollTop: 0,
         }, scroll_top_duration);
     });
+	
+	
+		  // search 
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json'
+});
+	
 			/*
 		Preeloader
 		============================*/

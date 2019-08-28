@@ -1,6 +1,15 @@
 <!-- Start Header Area -->
 <header class="header-area">
-   <div class="header-nav  {% if site.dark_header == true %}header-nav-dark  {% endif %}  {% if page.dark_header == true %}header-nav-dark {% else %} header-nav-white{% endif %}">
+ 
+ {% if page.layout == "post" or page.layout == "page" %}
+ <div class="header-nav  {% if page.dark_header == false %} header-nav-white {% endif %} ">
+ 
+ {% else %}
+  <div class="header-nav  {% if site.dark_header == false %} header-nav-white {% endif %} ">
+  
+{% endif %} 
+   
+   
       <div class="container">
          <div class="row">
             <div class="col-2">

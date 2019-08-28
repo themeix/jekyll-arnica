@@ -2,16 +2,18 @@
   url: /
 - title: About
   url: /about
-- title: Contact
-  url: /contact
 - title: Styles
   url: /styles
 - title: Pages
   url: /#
   sublinks:
-    - title: Contact
-      url: /contact
+    - title: Authors
+      url: /all-authors  
     - title: About
       url: /about
+    - title: Contact
+      url: /contact      
     - title: 404
       url: /404
+- title: Contact
+  url: /contact      

@@ -741,7 +741,8 @@ ul#results-container {
   min-height: 790px; }
   @media (max-width: 768px) {
     .header-page-title {
-      background-attachment: scroll; } }
+      background-attachment: scroll;
+      min-height: 690px; } }
 
 .page-title-box {
   padding: 90px 160px;

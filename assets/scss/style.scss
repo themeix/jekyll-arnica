@@ -474,6 +474,7 @@ ul#results-container {
 	min-height: 790px;
 	@include tablet{
 		background-attachment: scroll;
+		min-height: 690px;
 	}
 }
 

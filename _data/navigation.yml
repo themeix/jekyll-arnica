@@ -1,17 +1,17 @@
 - title: Home
   url: /
 - title: About
-  url: /pages/about
+  url: /about
 - title: Contact
-  url: /pages/contact
+  url: /contact
 - title: Styles
-  url: /pages/styles
+  url: /styles
 - title: Pages
   url: /#
   sublinks:
     - title: Contact
-      url: /pages/contact
+      url: /contact
     - title: About
-      url: /pages/about
+      url: /about
     - title: 404
-      url: /pages/404
+      url: /404

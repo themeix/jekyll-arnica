@@ -1,83 +1,60 @@
 ---
 layout: default
 ---
-     
-     <div class="slider-wrapper"> 
-     <div class="header-banner" style="background-image: url({{page.post_image}})">
-        <div class="box-skew-left"></div>
-        <div class="container">
-           <div class="slider-box">
-                 <div class="slider-item">
-                    {% for tags in page.tags limit: 1 %}
-                    <a href="/tag/{{tags}}" class="btn-style1 ">{{tags | capitalize}}</a>
-                    {% endfor %}
-                    <h1 class="heading-big">{{page.title}}</h1>
-                    <ul class="slider-date list-inline">
-                       <li class="list-inline-item">{{page.date | date_to_long_string}}</li>
-                       <li class="list-inline-item">
-                         {% assign words = page.content | number_of_words %}
-                         {{ words | divided_by:180 }} Minutes Read 
-                       </li>
-                    </ul>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
+ 
 
-      <!-- Start Single Blog  Area -->
-      <div class="single-blog-area section-spacing">
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-md-10">
-                  <div class="single-content-wrapper">
-                     <div class="post-content">
-                      {{page.content}}
-                     </div>
-                    <div class="social-share py-5">
-                      {% include social_share.html %}
-                    </div>
-                    {% for author in site.data.authors %}
-                     {% if page.author == author.name %}
-                     <div class="single-admin bg-color2 ">
-                      {% if author.cover_pic%}
-                        <div class="admin-avatar" style="background-image: url({{author.cover_pic}})">
-                           <div class="top"></div>
-                           <div class="bottom"></div>
-                           <div class="border"></div>
-                        </div>
-                        {% endif %}
-                        <div class="admin-comment">
-                           <h4 class="heading-4"><a href="/authors/{{author.name | downcase | replace:' ','_' }}">{{author.name}}</a></h4>
-                           <h6 class="heading-6">{{author.designation}}</h6>
-                           <p>{{author.bio}}</p>
-                           <ul class="admin-social list-inline">
-                             {% if author.facebook_url %}
-                              <li class="list-inline-item"><a href="{{author.facebook_url}}">Facebook </a></li>
-                             {% endif %}
-                             {% if author.twitter_url %}
-                              <li class="list-inline-item"><a href="{{author.twitter_url}}">Twitter  </a></li>
-                             {% endif %}
-                             {% if author.behance_url %}
-                              <li class="list-inline-item"><a href="{{author.behance_url}}">Behance </a></li>
-                              {% endif %}
-                           </ul>
-                        </div>
-                     </div>
-                     {% endif %}
-                    {% endfor %}
-                    <div class="post-pagination">
-                      {% include post_pagination.html %}
-                    </div>
-                     <div class="comment-reply-section mb-5">
-                      {% if page.comments %}
-                       {% include disqus_comment.html %}
-                      {% endif %}
-                     </div>
+{% include page_header.html %}
+
+<div class="single-blog-area section-spacing">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-10 mx-auto">
+            <div class="single-content-wrapper">
+               <div class="entry-content">
+                  {{page.content}}
+               </div>
+               <div class="social-share py-5">
+                  {% include social_share.html %}
+               </div>
+               {% assign author = site.authors | where: 'short_name', page.author | first %}
+               {% if author %}
+               <div class="single-admin bg-color2 ">
+                  {% if author.image%}
+                  <div class="admin-avatar" style="background-image: url({{author.image}})">
+                     <div class="top"></div>
+                     <div class="bottom"></div>
+                     <div class="border"></div>
                   </div>
+                  {% endif %}
+                  <div class="admin-comment">
+                     <h4 class="heading-4"><a href="{{author.url}}">{{author.name}}</a></h4>
+                     <h6 class="heading-6">{{author.designation}}</h6>
+                     <p>{{author.bio}}</p>
+                     <ul class="admin-social list-inline">
+                        {% if author.facebook %}
+                        <li class="list-inline-item"><a href="{{author.facebook}}">Facebook </a></li>
+                        {% endif %}
+                        {% if author.twitter %}
+                        <li class="list-inline-item"><a href="{{author.twitter}}">Twitter  </a></li>
+                        {% endif %}
+                        {% if author.instagram %}
+                        <li class="list-inline-item"><a href="{{author.instagram}}">Instagram </a></li>
+                        {% endif %}
+                     </ul>
+                  </div>
+               </div>
+               {% endif %}
+               <div class="post-pagination">
+                  {% include post_pagination.html %}
+               </div>
+               <div class="comment-reply-section mb-5">
+                  {% if page.comments %}
+                  {% include disqus_comment.html %}
+                  {% endif %}
                </div>
             </div>
          </div>
       </div>
-      <!-- End Single Blog Area -->
-
+   </div>
+</div>
+<!-- End Single Blog Area -->

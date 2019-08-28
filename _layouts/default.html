@@ -1,41 +1,29 @@
 <!DOCTYPE HTML>
 <html lang="eng">
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="robots" content="noindex, nofollow">
-     <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
-     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords}}{% else %}{{ site.keywords }}{% endif %}">
-     <!-- Site Title -->
-      <title>{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}</title>
-      <!--  Add Favicon -->
-      <link rel="shortcut icon" href="{{site.baseurl}}/assets/images/favicon.ico" type="image/x-icon"/>
-      <!-- Add CSS File -->
-      <link rel="stylesheet" href="{{site.baseurl}}/assets/css/bootstrap.min.css"/>
-      <link rel="stylesheet" href="{{site.baseurl}}/assets/css/fontawesome.min.css"/>
-      <link rel="stylesheet" href="{{site.baseurl}}/assets/css/animate.min.css"/>
-      <link rel="stylesheet" href="{{site.baseurl}}/assets/css/slicknav.min.css"/>
-      <link rel="stylesheet" href="{{site.baseurl}}/assets/css/default.css"/>
-      <link rel="stylesheet" href="{{site.baseurl}}/assets/css/owl.carousel.min.css"/>
-      <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css"/>
-      <!--  Google Font -->
-      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="robots" content="noindex, nofollow">
+   <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
+   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords}}{% else %}{{ site.keywords }}{% endif %}">
+   <title>{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}</title>
+   <link rel="shortcut icon" href="{{site.baseurl}}/assets/images/favicon.ico" type="image/x-icon"/>
+   <!-- gulp:css -->
+   <link rel="stylesheet" href="/assets/css/app.min.css">
+   <!-- endgulp -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
    </head>
    <body class="{% if page.layout == 'post' %} post-template {% endif %} {% if page.url == '/index.html' %} home-template {% endif %} {% if page.layout == 'tag_page' %} tag-template {% endif %} {% if page.parmalink %} page-template {% endif %}">
-
+      <!-- Preloader Start -->
+      <div id="preloader">
+         <div id="preloader-status"></div>
+      </div>
+      <!-- Preloader End -->   
       {% include header.html %}
-         {{content}}
+      {{content}}
       {% include footer.html %}
-
-      <!-- Add Javascript File -->
-      <script src="{{site.baseurl}}/assets/js/jquery-3.3.1.min.js"></script>
-      <script src="{{site.baseurl}}/assets/js/bootstrap.min.js"></script>
-      <script src="{{site.baseurl}}/assets/js/owl.carousel.min.js"></script>
-      <script src="{{site.baseurl}}/assets/js/skew.min.js"></script>
-      <script src="{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"></script>
-      <script src="{{site.baseurl}}/assets/js/jquery.slicknav.min.js"></script>
-      <script src="{{site.baseurl}}/assets/js/highlight.js"></script>
-      <script src="{{site.baseurl}}/assets/js/wow.min.js"></script>
-      <script src="{{site.baseurl}}/assets/js/custom.js"></script>
+      <!-- gulp:js -->
+      <script src="/assets/js/build.min.js"></script>
+      <!-- endgulp -->
    </body>
 </html>

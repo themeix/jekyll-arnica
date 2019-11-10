@@ -37,29 +37,7 @@
 	'./assets/js/app.js'
     ];
 	
-    var Production_CSS_Files = [
-	'./dist/production/assets/css/bootstrap.min.css',
-	'./dist/production/assets/css/fontawesome.min.css',
-	'./dist/production/assets/css/animate.min.css',
-	'./dist/production/assets/css/slicknav.min.css',
-	'./dist/production/assets/css/default.css',
-	'./dist/production/assets/css/prism.css',
-	'./dist/production/assets/css/owl.carousel.min.css',	
-	'./dist/production/assets/css/style.min.css'
-    ];	
-	
-    var Production_JS_Files = [
-	'./dist/production/assets/js/jquery-3.3.1.min.js',
-	'./dist/production/assets/js/bootstrap.min.js',
-	'./dist/production/assets/js/owl.carousel.min.js',
-	'./dist/production/assets/js/simple-jekyll-search.min.js',
-	'./dist/production/assets/js/jquery.slicknav.min.js',
-	'./dist/production/assets/js/prism.js',
-	'./dist/production/assets/js/jquery.fitvids.js',
-	'./dist/production/assets/js/wow.min.js',
-	'./dist/production/assets/js/app.js'	
- 
-    ];	
+   
 /*
 =============================
 	Include Gulp & Plugins

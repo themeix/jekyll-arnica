@@ -1,8 +1,16 @@
-{% if page.layout == "category" or page.layout == "author" or page.layout == "tag_page"%}
+{% if page.layout == "category" or page.layout == "author" or page.layout == "tag"%}
 <div class="d-flex align-items-center header-page-title" style="background-image: url({{site.cover_image}});">
    <div class="container">
       <div class="page-title-box">
-         <h1 class="heading-big {% if site.dark_header == false %} text-white {% endif %}">{{page.title}}</h1>
+         {% if page.layout == "category" %}
+         <h1 class="heading-big {% if site.dark_header == false %} text-white {% endif %}">Category - {{page.title}}</h1>
+         {% endif %}
+         {% if page.layout == "author" %}
+         <h1 class="heading-big {% if site.dark_header == false %} text-white {% endif %}">Author - {{page.title}}</h1>
+         {% endif %}
+         {% if page.layout == "tag" %}
+         <h1 class="heading-big {% if site.dark_header == false %} text-white {% endif %}">Tag - {{page.title}}</h1>
+         {% endif %}
       </div>
    </div>
 </div>

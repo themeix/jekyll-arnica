@@ -1,4 +1,4 @@
-{% for posts in paginator.posts %}
+{% for posts in site.posts %}
 {% assign item = forloop.index | modulo: 2 %}
 	{% include post_card.html %}
 {% endfor %}

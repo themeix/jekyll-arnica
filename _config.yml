@@ -1,5 +1,6 @@
 # Welcome to Arnica
 title: Arnica - Premium Jekyll Theme
+version: 1.0.1
 email: themeix@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Arnica Responsive Static Jekyll Theme For Blogging.
@@ -83,7 +84,7 @@ autopages:
     layouts: 
       - 'category.html'
     # Optional, the title that each category paginate page should get (:cat is replaced by the Category name)
-    title: 'Category -  :cat'
+    title: ':cat'
     # Optional, the permalink for the  pagination page (:cat is replaced), 
     # the pagination permalink path is then appended to this permalink structure
     permalink: '/category/:cat'    
@@ -96,8 +97,8 @@ autopages:
   # Tag pages, omit to disable
   tags:
     layouts: 
-      - 'category.html'
-    title: 'Tag - :tag' # :tag is replaced by the tag name
+      - 'tag.html'
+    title: ':tag' # :tag is replaced by the tag name
     permalink: '/tag/:tag'      
   
 tag_page_layout: category

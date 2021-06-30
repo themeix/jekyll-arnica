@@ -3,8 +3,30 @@ layout: default
 pagination:
   enabled: true
 ---
+
+{% assign page_title = page.title %}
+{% assign cat = page_title  %}
+{% assign cat_posts = site.posts | where: "categories", cat  %}
+
 {% include page_header.html %}
 <div class="blog-area">
-   {% include post_loop.html %}
+  {% for posts in cat_posts %}
+    {% include post_card.html %}
+  {% endfor %}
 </div>
-{% include pagination.html %}
+
+<!-- Start pagination Area -->
+{% if paginator.next_page %}
+<div class="pagination-area">
+   <div class="pagination-wrapper bg-color3 inner-spacing">
+      <div class="container">
+         <nav class="page-pagination text-center">
+            <button class="btn btn-light mb-2 w-100 loadmore-cat">
+               Load More
+         </button>
+         </nav>
+      </div>
+   </div>
+</div>
+{% endif %}
+<!-- End pagination Area -->

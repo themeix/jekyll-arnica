@@ -1,21 +1,27 @@
 ---
 layout: default
+pagination:
+  enabled: true
 ---
 {% include page_header.html %}
+
+{% assign page_title = page.title %}
+{% assign tag = page_title %}
+{% assign tag_posts = site.posts | where: "tags", tag %}
+
 <div class="blog-area">
-   {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
-   {% for posts in filtered_posts %}
-   {% assign item = forloop.index | modulo: 2 %}
-   {% include post_card.html %}
-   {% endfor %}
+  {% for posts in tag_posts %}
+    {% include post_card.html %}
+  {% endfor %}
 </div>
 
+<!-- Start pagination Area -->
 {% if paginator.next_page %}
 <div class="pagination-area">
    <div class="pagination-wrapper bg-color3 inner-spacing">
       <div class="container">
          <nav class="page-pagination text-center">
-            <button class="btn btn-light mb-2 w-100 loadmore-au">
+            <button class="btn btn-light mb-2 w-100 loadmore-tag">
                Load More
          </button>
          </nav>
@@ -23,3 +29,4 @@ layout: default
    </div>
 </div>
 {% endif %}
+<!-- End pagination Area -->

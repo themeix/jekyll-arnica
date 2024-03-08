@@ -1,3 +1,7 @@
+[build]
+  command = "bundle exec jekyll build"  # Replace with your build command
+  publish = "_site/"  # Replace with your publish directory
+
 [build.environment]
-RUBY_VERSION = "2.6.2"
-BUNDLER_VERSION = ">= 2"
+  RUBY_VERSION = "2.6.2"
+  BUNDLER_VERSION = "2.2.3"  # Replace with the desired Bundler version

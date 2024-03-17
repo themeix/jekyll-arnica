@@ -3,7 +3,7 @@
   publish = "_site/"
 
 [build.environment]
-  RUBY_VERSION = "3.0.0"
+  RUBY_VERSION = "3.2.2"
   BUNDLER_VERSION = "2.5.6"
 
 [[plugins]]

@@ -1,0 +1,13 @@
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site/"
+
+[build.environment]
+  RUBY_VERSION = "2.6.2"
+  BUNDLER_VERSION = "2.2.3"
+
+[[plugins]]
+  package = "@netlify/plugin-cache"
+
+[[plugins]]
+  package = "@netlify/plugin-ruby"

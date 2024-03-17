@@ -99,6 +99,13 @@ autopages:
       - 'tag.html'
     title: ':tag' # :tag is replaced by the tag name
     permalink: '/tag/:tag'      
+
+    
+collections:
+  authors:
+    # title: Authors
+    output: true
+    permalink: /authors/:path/       
    
 feed:
   collections:

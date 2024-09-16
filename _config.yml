@@ -99,23 +99,14 @@ autopages:
       - 'tag.html'
     title: ':tag' # :tag is replaced by the tag name
     permalink: '/tag/:tag'      
-  
-tag_page_layout: category
-tag_page_dir: tag
-tag_permalink_style: pretty
 
-jekyll-archives:
-  enabled: all
-  layout: category
-  permalinks:
-    category: '/category/:name/'
     
 collections:
   authors:
-    title: Authors
+    # title: Authors
     output: true
     permalink: /authors/:path/       
-
+   
 feed:
   collections:
     posts:
